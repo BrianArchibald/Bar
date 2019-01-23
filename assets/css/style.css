@@ -1,21 +1,33 @@
+* {
+    font-family: Oswald,sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #161616;
     overflow-x: hidden
 }
-
 
 a {
 	color: #f4e8cd;
 	text-decoration: none;
 }
 nav {
-	width: 100%;
+    width: 100%;
     height: 60px;
-    display: block;
+    display: grid;
+    grid-template-columns: 4fr 2.7fr;
     position: fixed;
     top: 0;
     z-index: 100;
+}
+
+.logo-mini {
+    width: 120px;
+    height: 60px;
+    display: inline-block;
+    margin-left: 5%;
 }
 
 nav,
@@ -26,7 +38,6 @@ nav,
 
 .nav-item,
 .nav-item-mobile {
-	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
 	list-style-type: none;
 }
@@ -35,7 +46,9 @@ nav,
     width: auto;
     height: 60px;
     margin: 0 5% 0 0;
-    vertical-align: bottom
+    vertical-align: bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .nav-item {
@@ -54,9 +67,243 @@ nav,
     background-image: url(images/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
     width: 100%;
     height: 100vh;
     color: #fff;
+    text-align: center;
+}
+
+.logo {
+    width: 50%;
+    height: 25%;
+    color: #fff
+}
+
+
+.hero-text {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 23vh;
+}
+
+.hero-text h4 {
+    font-size: 20px;
+    width: auto;
+    border: 2px solid #f4e8cd;
+    color: #f4e8cd;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 30px auto 10px;
+    cursor: pointer
+}
+
+#section-2 {
+    width: 100%;
+    height: 100vh;
+    margin: 5px 0;
+}
+
+.third {
+    display: inline-block;
+    width: 33.3333%;
+    height: 100%
+}
+
+.col1 {
+    background-image: url(images/group.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.col2 {
+    vertical-align: top;
+    color: #fff;
+    text-align: center;
+    font-size: 64px;
+    background-color: #161616;
+}
+
+.col2 h3 {
+    padding: 30px;
+    border: 6px solid #f4e8cd;
+    margin: 20% 8%;
+}
+
+.col3 {
+    background-image: url(images/pizza.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#section-3 {
+    background-image: url(images/blue.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section-text {
+    width: 35%;
+    max-width: 750px;
+    height: auto;
+    margin-left: 2.5%;
+    margin-top: 12%;
+    color: #fff;
+    border: 6px solid #f4e8cd;
+    text-align: center;
+}
+
+.section-head {
+    font-size: 48px;
+    margin: 20px 50px
+}
+
+.section-subhead {
+    font-size: 28px;
+    margin: 30px 50px
+}
+
+.section-para {
+    font-size: 22px;
+    margin: 20px 50px 40px
+}
+
+#section-4 {
+    background-image: url(images/oven.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 250px;
+}
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 36px;
+    color: #f4e8cd;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.food-menu {
+    width: 90%;
+}
+.hide {
+    display: none;
+}
+
+.menu-title {
+    font-size: 74px;
+    color: #f4e8cd;
+}
+.menu-one-of-four {
+    margin-right: 26px;
+}
+
+.menu-item-title,
+.menu-item-price,
+.menu-item-portion,
+.menu-item-description {
+    color: #f4e8cd;
+}
+
+#menu-item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 10%;
+}
+
+.menu-item {
+    max-width: 550px;
+    margin-bottom: 63px;
+}
+
+.menu-item-description{
+    width: 60%;
+}
+
+.specific-item-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.menu-item-price {
+    justify-self: center;
+}
+
+#section-5 {
+    background-image: url(images/bottles.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#section-5-container {
+    width: 35%;
+    max-width: 750px;
+    height: auto;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    color: #fff;
+    border: 6px solid #f4e8cd;
+}
+
+.about-us-title {
+    font-size: 48px;
+    margin: 20px 50px;
+}
+
+.about-us-header {
+    font-size: 28px;
+    margin: 30px 50px;
+}
+
+.about-us-text {
+    font-size: 22px;
+    margin: 20px 20px 40px;
+}
+
+#map {
+    margin: 10% 20%;
+}
+
+#section-7 {
+    color: #f4e8cd;
+}
+
+#section-7-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 11%;
+    text-align: center;
+}
+
+.contact-us-head {
+    font-size: 18px;
+}
+.fab {
+    font-size: 18px;
 }
