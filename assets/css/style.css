@@ -64,7 +64,12 @@ nav,
 }
 
 #hero {
-    background-image: url(images/hero.jpg);
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+    ),     
+    url(images/hero2.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -81,7 +86,7 @@ nav,
 
 
 .hero-text {
-    width: 600px;
+    width: 500px;
     height: auto;
     margin: auto;
     font-size: 32px;
