@@ -66,12 +66,13 @@ nav,
 #hero {
     background: 
     linear-gradient(
-          rgba(0, 0, 0, 0.7), 
-          rgba(0, 0, 0, 0.7)
+          rgba(0, 0, 0, 0.75), 
+          rgba(0, 0, 0, 0.75)
     ),     
-    url(images/hero2.png);
+    url(images/hero-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     width: 100%;
     height: 100vh;
     color: #fff;
@@ -118,8 +119,8 @@ nav,
 }
 
 .col1 {
-    background-image: url(images/group.jpg);
-    background-position: center; 
+    background-image: url(images/group-min.jpg);
+    background-position: center left; 
     background-repeat: no-repeat; 
     background-size: cover;
 }
@@ -139,14 +140,19 @@ nav,
 }
 
 .col3 {
-    background-image: url(images/pizza.jpg);
+    background-image: url(images/pizza-min.jpg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
 }
 
 #section-3 {
-    background-image: url(images/blue.jpg);
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.2), 
+          rgba(0, 0, 0, 0.2)
+    ),    
+    url(images/blue-min.jpg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -176,13 +182,18 @@ nav,
     margin: 30px 50px
 }
 
-.section-para {
+.section-paragraph {
     font-size: 22px;
     margin: 20px 50px 40px
 }
 
 #section-4 {
-    background-image: url(images/oven.jpg);
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.65), 
+          rgba(0, 0, 0, 0.65)
+    ),   
+    url(images/oven-min.jpg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -205,6 +216,10 @@ nav,
     justify-content: space-around;
     margin-top: 80px;
 }
+.selected {
+    background-color: #f4e8cd;
+    color: #000
+}
 
 .food-menu {
     width: 90%;
@@ -219,6 +234,11 @@ nav,
 }
 .menu-one-of-four {
     margin-right: 26px;
+    padding: 0 6px;
+}
+
+.menu-one-of-four:hover{
+    cursor: pointer;
 }
 
 .menu-item-title,
@@ -236,7 +256,7 @@ nav,
 }
 
 .menu-item {
-    max-width: 550px;
+    max-width: 650px;
     margin-bottom: 63px;
 }
 
@@ -246,15 +266,24 @@ nav,
 
 .specific-item-details {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 4fr 1fr 2fr;
 }
 
 .menu-item-price {
     justify-self: center;
 }
 
+.hide {
+    display: none;
+}
+
 #section-5 {
-    background-image: url(images/bottles.jpg);
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.75), 
+          rgba(0, 0, 0, 0.75)
+    ),   
+    url(images/bottles3-min.jpg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
