@@ -1,0 +1,517 @@
+* {
+    font-family: Oswald,sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+    overflow-x: hidden
+}
+
+a {
+	color: #f4e8cd;
+	text-decoration: none;
+}
+
+a:hover {
+    color: #fff8e8;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 4fr 2.7fr;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-mini {
+    width: 120px;
+    height: 60px;
+    margin-left: 5%;
+}
+
+nav,
+.nav-item-mobile {
+	color: #f4e8cd;
+	background-color: #161616;	
+}
+
+.nav-item,
+.nav-item-mobile {
+	font-size: 1em;
+	list-style-type: none;
+}
+
+.nav-bar {
+    width: auto;
+    height: 60px;
+    margin: 0 5% 0 0;
+    vertical-align: bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.nav-item {
+    padding: 5px;
+    margin: 13px 20px;
+}
+
+#cross-icon p,
+#menu-icon p,
+.nav-bar-mobile,
+.nav-item-mobile {
+    display: none
+}
+
+.remove {
+    display: none;
+}
+
+.display {
+    display: grid;
+    justify-self: end;
+    margin-right: 4vw;
+}
+
+#hero {
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.75), 
+          rgba(0, 0, 0, 0.75)
+    ),     
+    url(images/hero-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.logo {
+    width: 50%;
+    height: 25%;
+    color: #fff
+}
+
+.hero-text {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 23vh;
+}
+
+.hero-text h4 {
+    font-size: 20px;
+    width: auto;
+    border: 2px solid #f4e8cd;
+    color: #f4e8cd;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 30px auto 10px;
+    cursor: pointer
+}
+
+#section-2 {
+    width: 100%;
+    height: 100vh;
+    margin: 5px 0;
+}
+
+.third {
+    display: inline-block;
+    width: 33.3333%;
+    height: 100%
+}
+
+.col1 {
+    background-image: url(images/group-min.jpg);
+    background-position: center left; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.col2 {
+    vertical-align: top;
+    color: #fff;
+    text-align: center;
+    font-size: 64px;
+    background-color: #161616;
+}
+
+.col2 h3 {
+    padding: 30px;
+    border: 6px solid #f4e8cd;
+    margin: 20% 8%;
+}
+
+.col3 {
+    background-image: url(images/pizza-min.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#section-3 {
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.2), 
+          rgba(0, 0, 0, 0.2)
+    ),    
+    url(images/blue-min.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section-text {
+    width: 35%;
+    max-width: 750px;
+    height: auto;
+    margin-left: 2.5%;
+    margin-top: 12%;
+    color: #fff;
+    border: 6px solid #f4e8cd;
+    text-align: center;
+}
+
+.section-head {
+    font-size: 48px;
+    margin: 20px 50px
+}
+
+.section-subhead {
+    font-size: 28px;
+    margin: 30px 50px
+}
+
+.section-paragraph {
+    font-size: 22px;
+    margin: 20px 50px 40px
+}
+
+#section-4 {
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.65), 
+          rgba(0, 0, 0, 0.65)
+    ),   
+    url(images/oven-min.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 250px;
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 36px;
+    color: #f4e8cd;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.selected {
+    background-color: #f4e8cd;
+    color: #000
+}
+
+.food-menu {
+    width: 90%;
+}
+
+.hide {
+    display: none;
+}
+
+.menu-title {
+    font-size: 74px;
+    color: #f4e8cd;
+}
+.menu-one-of-four {
+    margin-right: 26px;
+    padding: 0 6px;
+}
+
+.menu-one-of-four:hover{
+    cursor: pointer;
+}
+
+.menu-item-title,
+.menu-item-price,
+.menu-item-portion,
+.menu-item-description {
+    color: #f4e8cd;
+}
+
+#menu-item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 10%;
+}
+
+.menu-item {
+    max-width: 650px;
+    margin-bottom: 63px;
+}
+
+.menu-item-description{
+    width: 60%;
+}
+
+.specific-item-details {
+    display: grid;
+    grid-template-columns: 4fr 1fr 2fr;
+}
+
+.menu-item-price {
+    justify-self: center;
+}
+
+.hide {
+    display: none;
+}
+
+#section-5 {
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.75), 
+          rgba(0, 0, 0, 0.75)
+    ),   
+    url(images/bottles3-min.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#section-5-container {
+    width: 35%;
+    max-width: 750px;
+    height: auto;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-top: 15%;
+    margin-bottom: 8%;
+    color: #fff;
+    border: 6px solid #f4e8cd;
+}
+
+.about-us-title {
+    font-size: 48px;
+    margin: 20px 50px;
+}
+
+.about-us-header {
+    font-size: 28px;
+    margin: 30px 50px;
+}
+
+.about-us-text {
+    font-size: 22px;
+    margin: 20px 20px 40px;
+}
+
+#map {
+    margin: 40px 10%;
+    width: 80%;
+    height: 450px;
+}
+
+#section-7 {
+    color: #f4e8cd;
+}
+
+#section-7-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 11%;
+    text-align: center;
+}
+
+.contact-us-head {
+    font-size: 18px;
+}
+
+.fab {
+    font-size: 18px;
+}
+
+@media screen and (max-width:1320px) {
+    .col1,
+    .col3 {
+        width: 50%;
+    }
+    .col2 {
+        position: absolute;
+        background: 0 0;
+        right: 10%;
+        width: 80%
+    }
+    .col2 h3 {
+        margin: 20% auto auto;
+        border: none
+    }
+}
+
+@media screen and (max-width:865px) {
+    #nav-bar-mobile.hide,
+    #nav-bar-mobile.show,
+    .nav-item-mobile {
+        transition: all .3s ease-in-out
+    }
+
+    .nav-bar {
+        display: none
+    }
+
+    #nav-bar-mobile {
+        display: grid;
+        grid-template-rows: 1fr;
+        position: absolute;
+        top: 40px;
+        background-color: #161616;
+        right: -140px;
+        padding: 10px;
+        text-align: center
+    }
+
+    .nav-item-mobile {
+        list-style-type: none;
+        display: block;
+        font-size: 16px;
+        font-family: Oswald, sans-serif;
+        height: 40px;
+        width: 100px
+    }
+
+    #cross-icon p,
+    #menu-icon p,
+    .display {
+        display: inline-block;
+        font-size: 35px;
+        margin: -1px 5% 0 0
+    }
+
+    .nav-menu-item a {
+        vertical-align: bottom
+    }
+
+    #nav-bar-mobile.show {
+        right: 0
+    }
+
+    #nav-bar-mobile.hide {
+        right: -140px
+    }
+
+    .col1 {
+        width: 100%;
+    }
+
+    .col3 {
+        width: 0;
+    }
+
+    .section-text {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .top-menu {
+        margin-left: 5%;
+        align-items: center;
+    }
+
+    .menu-title {
+        font-size: 50px;
+    }
+
+    .menu-list {
+        font-size: 28px;
+    }
+
+    .top-menu-right {
+        margin-top: 1.7em;
+    }
+
+    .glass {
+        display: none;
+    }
+
+    #section-5-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:865px) {
+    .menu-list {
+        margin-top: 0;
+    }
+
+    .menu-item {
+        margin-bottom: 0;
+    }
+
+    .menu-item-title, 
+    .menu-item-price, 
+    .menu-item-portion, 
+    .menu-item-description {
+        font-size: 1em;
+    }
+
+    #section-7-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-item-description {
+        width: 100%;
+    }
+
+    #menu-item-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr !important;
+    }
+
+    .hero-text {
+        width: 320px;
+    }
+
+    .extra {
+        display: none;
+    }
+
+    .top-menu-right {
+        margin-top: 0em;
+    }
+}
